@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:grey;
+    position: relative;/*parent div ha kyu ki iske position relaative dena jaruri ha*/
+}
+
+#nav{
+    height: 90px;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img{
+    height: 50px;
+    padding-left: 0.5vw;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+}
+
+#nav-part1>h5{
+    font-family: monument;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5vw;
+}
+
+#nav-part2 i{
+    margin-right: 40px;
+    font-size: 21px;
+     font-weight: 400;
+    
+}
+
+#contant{
+    height:calc(100% - 110px);
+    width: 100%;
+   /* background-color: red;*/
+    position: relative;
+    display: flex;
+}
+
+#left{
+    height: 100%;
+    width: 35%;
+/*    background-color: aqua;*/
+    padding: 20px 120px;
+}
+#left>h5{
+    font-size: 15px;
+   /* color: chartreuse;*/
+    margin-bottom: 20px
+}
+#left>h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    line-height: 70px;
+    margin-bottom: 1px;
+}
+
+#left>p{
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+    gap: 3px;
+}
+
+
+#left button{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 80px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-top-left-radius: 0px;
+    
+}
+
+
+#right{
+    height: 100%;
+    width: 70%;
+    /*background-color:greenyellow;*/
+    position: relative;
+    padding: 8px; 
+    margin-right: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.elem{
+    height: 530px;
+    width: 380px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 8px 10px rgb(0, 0, 0);
+    display: inline-block;
+    gap: 10vw;
+}
+
+
+.elem img{
+    height: 80%;
+    width: 100%;
+    top: 15%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:slategrey;
+    padding: 17px 34px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.elem h5{
+    position: absolute;
+    bottom: 11%;
+    right: 0;
+    background-color:black;
+    color: white;
+    padding: 17px 34px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
